@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Зарядка</string>
+    <string name="good">class</string>
+    <string name="zero">0</string>
+    <string name="hour">ч.</string>
+    <string name="minutes">м.</string>
+    <string name="gym_time">Время зарядки</string>
+    <string name="start">включить</string>
+    <string name="finish">выключить</string>
+    <string name="gym">На зарядку становись!</string>
+    <string name="turn_off">Выключай! Встаю уже</string>
+</resources>
