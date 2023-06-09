@@ -3,65 +3,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
     android:gravity="center">
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:src="@drawable/good"
-        android:contentDescription="@string/good" />
     <TextView
-        android:id="@+id/time_gym_text"
+        android:id="@+id/dialog_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:text="@string/gym_time"
-        android:textSize="32sp"/>
+        android:paddingTop="10dp"
+        android:text="@string/set_gym_time"
+        android:textSize="28sp"/>
     <LinearLayout
-        android:id="@+id/time_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_horizontal"
-        android:paddingTop="10dp">
-        <TextView
-            android:id="@+id/hours"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp">
+        <EditText
+            android:id="@+id/hours_edit_text"
             android:text="@string/zero"
             style="@style/number_text"
             android:autofillHints=""
             android:hint="@string/zero"/>
         <TextView
-            android:id="@+id/hour_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:text="@string/hour"
             android:textSize="32sp"/>
-        <TextView
-            android:id="@+id/minutes"
+        <EditText
+            android:id="@+id/minutes_edit_text"
             android:layout_marginStart="10dp"
             android:text="@string/zero"
             style="@style/number_text"
             android:autofillHints="" />
         <TextView
-            android:id="@+id/minutes_text"
             android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/minutes"
             android:textSize="32sp"/>
     </LinearLayout>
-
-    <Button
-        android:id="@+id/switch_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:padding="10dp"
-        android:gravity="center_horizontal"
-        android:text="@string/finish"
-        android:textSize="34sp" />
 </LinearLayout>

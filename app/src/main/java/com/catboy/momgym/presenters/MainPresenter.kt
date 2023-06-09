@@ -3,8 +3,13 @@ package com.catboy.momgym.presenters
 import android.content.Context
 import android.text.Editable
 import com.catboy.momgym.usecases.*
+import com.catboy.momgym.usecases.permissions.IsPermissionsDenied
+import com.catboy.momgym.usecases.startactivities.StartPermissionsActivity
 
 class MainPresenter(private val context: Context) {
+
+    private val checkIsPermissionsDenied = IsPermissionsDenied(context)
+    private val startPermissionsActivity = StartPermissionsActivity(context)
     fun getButtonText(): String {
         return GetButtonText(context).execute()
     }
@@ -39,6 +44,14 @@ class MainPresenter(private val context: Context) {
 
     fun getMinutesText(): String {
         return GetMinutesText(context).execute()
+    }
+
+    fun checkIsPermissionsDenied() {
+        startPermissionsActivity.execute(checkIsPermissionsDenied.execute())
+    }
+
+    fun setOrCancelAlarm() {
+        SetOrCancelAlarm(context).execute()
     }
 
 }

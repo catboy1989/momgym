@@ -9,4 +9,10 @@
     <string name="finish">выключить</string>
     <string name="gym">На зарядку становись!</string>
     <string name="turn_off">Выключай! Встаю уже</string>
+    <string name="set_gym_time">Введите время зарядки!</string>
+    <string name="ok">Окей</string>
+    <string name="cancel">Отмена</string>
+    <string name="text_permissions">Пожалуйста, дайте необходимые разрешения для работы приложения. Без данных разрешений оно работать не сможет.</string>
+    <string name="permission_overlay_button">разрешить показывать поверх всех окон</string>
+    <string name="permission_file_button">разрешить работу с файлами</string>
 </resources>
